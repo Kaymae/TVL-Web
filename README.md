@@ -67,35 +67,35 @@
     
     <div id="info1" class="info">
         <h2>Mariane Asumbrado Tejada</h2>
-        <p>Age: 16</p>
+        <p>Age: 16 years old</p>
         <p>Address: La Libertad Kapatagan LDN</p>
         <p>Email: asumbradomariane@gmail.com</p>
         <p><em>"Dreams will always stay dreams, unless you act upon them."</em></p>
     </div>
     <div id="info2" class="info">
         <h2>Daisy A De Asir</h2>
-        <p>Age: 18</p>
+        <p>Age: 18 years old</p>
         <p>Address: Cogon Lala proper</p>
         <p>Email: deasirdaisy76@gmail.com</p>
         <p><em>"The best way to predict your future is to create it."</em></p>
     </div>
     <div id="info3" class="info">
         <h2>Crizel Sumalpong Dioquino</h2>
-        <p>Age: 18</p>
+        <p>Age: 18 years old</p>
         <p>Address: Barangay Rebe LDN</p>
         <p>Email: 09853143274</p>
         <p><em>"Whenever you feel like giving up, look back and see how far you've come."</em></p>
     </div>
     <div id="info4" class="info">
         <h2>Exequel Bentulan Canoos</h2>
-        <p>Age: 17</p>
+        <p>Age: 17 years old</p>
         <p>Address: Abaga LDN</p>
         <p>Email: canoosexequel0@gmail.com</p>
         <p><em>"Consciously release the past and choose to live in the present."</em></p>
     </div>
     <div id="info5" class="info">
         <h2>Ashlee E. Obial</h2>
-        <p>Age: 17</p>
+        <p>Age: 17 years old</p>
         <p>Address: Cabasagan LDN</p>
         <p>Email: ashleeobial19@gmail.com</p>
         <p><em>"LIVE, LAUGH, and LOVED."</em></p>
