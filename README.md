@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TVL Website - Team Profiles</title>
+    <title>TVL - Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,6 +13,9 @@
         .container {
             width: 80%;
             margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .profile {
             background: white;
@@ -20,89 +23,85 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-            border: 2px solid black;
+            width: 300px;
             text-align: center;
-            display: none;
+            cursor: pointer;
+            border: 2px solid black;
         }
         .profile img {
             width: 100%;
             border-radius: 10px;
         }
-        h2, p {
-            margin: 10px 0;
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
         }
-        .nav {
-            margin: 20px;
-        }
-        .nav button {
-            padding: 10px;
-            margin: 5px;
-            border: none;
-            background: #FFB6C1;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
+        .info {
+            display: none;
+            margin-top: 10px;
         }
     </style>
-</head>
-<body>
-    <h1>Welcome to TVL- Website</h1>
-    <h2>Meet Our Team</h2>
-    <div class="nav">
-        <button onclick="showProfile(1)">1</button>
-        <button onclick="showProfile(2)">2</button>
-        <button onclick="showProfile(3)">3</button>
-        <button onclick="showProfile(4)">4</button>
-        <button onclick="showProfile(5)">5</button>
-    </div>
-    <div class="container">
-        <div class="profile" id="profile1">
-            <img src="daisy.jpg" alt="Daisy A De Asir">
-            <h2>Daisy A De Asir</h2>
-            <p>Age: 18</p>
-            <p>Address: Cogon Lala proper</p>
-            <p>Email: deasirdaisy76@gmail.com</p>
-            <p><em>"The best way to predict your future is to create it."</em></p>
-        </div>
-        <div class="profile" id="profile2">
-            <img src="crizel.jpg" alt="Crizel Sumalpong Dioquino">
-            <h2>Crizel Sumalpong Dioquino</h2>
-            <p>Age: 18</p>
-            <p>Address: Barangay Rebe LDN</p>
-            <p>Email: 09853143274</p>
-            <p><em>"Whenever you feel like giving up, look back and see how far you've come."</em></p>
-        </div>
-        <div class="profile" id="profile3">
-            <img src="exequel.jpg" alt="Exequel Bentulan Canoos">
-            <h2>Exequel Bentulan Canoos</h2>
-            <p>Age: 17</p>
-            <p>Address: Abaga LDN</p>
-            <p>Email: canoosexequel0@gmail.com</p>
-            <p><em>"Consciously release the past and choose to live in the present."</em></p>
-        </div>
-        <div class="profile" id="profile4">
-            <img src="ashlee.jpg" alt="Ashlee E. Obial">
-            <h2>Ashlee E. Obial</h2>
-            <p>Age: 17</p>
-            <p>Address: Cabasagan LDN</p>
-            <p>Email: ashleeobial19@gmail.com</p>
-            <p><em>"LIVE, LAUGH, and LOVED."</em></p>
-        </div>
-        <div class="profile" id="profile5">
-            <img src="mariane.jpg" alt="Mariane Asumbrado Tejada">
-            <h2>Mariane Asumbrado Tejada</h2>
-            <p>Age: 16</p>
-            <p>Address: La Libertad Kapatagan LDN</p>
-            <p>Email: asumbradomariane@gmail.com</p>
-            <p><em>"Dreams will always stay dreams, unless you act upon them."</em></p>
-        </div>
-    </div>
     <script>
-        function showProfile(num) {
-            let profiles = document.querySelectorAll('.profile');
-            profiles.forEach(profile => profile.style.display = 'none');
-            document.getElementById('profile' + num).style.display = 'block';
+        function showInfo(id) {
+            var infos = document.querySelectorAll('.info');
+            infos.forEach(info => info.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
         }
     </script>
+</head>
+<body>
+    <h1>Welcome to TVL - Website</h1>
+    <div class="container">
+        <div class="profile" onclick="showInfo('daisy-info')">
+            <img src="daisy.jpg" alt="Daisy A De Asir">
+        </div>
+        <div class="profile" onclick="showInfo('crizel-info')">
+            <img src="crizel.jpg" alt="Crizel Sumalpong Dioquino">
+        </div>
+        <div class="profile" onclick="showInfo('exequel-info')">
+            <img src="exequel.jpg" alt="Exequel Bentulan Canoos">
+        </div>
+        <div class="profile" onclick="showInfo('ashlee-info')">
+            <img src="ashlee.jpg" alt="Ashlee E. Obial">
+        </div>
+        <div class="profile" onclick="showInfo('mariane-info')">
+            <img src="mariane.jpg" alt="Mariane Asumbrado Tejada">
+        </div>
+    </div>
+    <div id="daisy-info" class="info">
+        <h2>Daisy A De Asir</h2>
+        <p>Age: 18</p>
+        <p>Address: Cogon Lala proper</p>
+        <p>Email: deasirdaisy76@gmail.com</p>
+        <p><em>"The best way to predict your future is to create it."</em></p>
+    </div>
+    <div id="crizel-info" class="info">
+        <h2>Crizel Sumalpong Dioquino</h2>
+        <p>Age: 18</p>
+        <p>Address: Barangay Rebe LDN</p>
+        <p>Email: 09853143274</p>
+        <p><em>"Whenever you feel like giving up, look back and see how far you've come."</em></p>
+    </div>
+    <div id="exequel-info" class="info">
+        <h2>Exequel Bentulan Canoos</h2>
+        <p>Age: 17</p>
+        <p>Address: Abaga LDN</p>
+        <p>Email: canoosexequel0@gmail.com</p>
+        <p><em>"Consciously release the past and choose to live in the present."</em></p>
+    </div>
+    <div id="ashlee-info" class="info">
+        <h2>Ashlee E. Obial</h2>
+        <p>Age: 17</p>
+        <p>Address: Cabasagan LDN</p>
+        <p>Email: ashleeobial19@gmail.com</p>
+        <p><em>"LIVE, LAUGH, and LOVED."</em></p>
+    </div>
+    <div id="mariane-info" class="info">
+        <h2>Mariane Asumbrado Tejada</h2>
+        <p>Age: 16</p>
+        <p>Address: La Libertad Kapatagan LDN</p>
+        <p>Email: asumbradomariane@gmail.com</p>
+        <p><em>"Dreams will always stay dreams, unless you act upon them."</em></p>
+    </div>
 </body>
 </html>
