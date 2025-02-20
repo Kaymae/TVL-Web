@@ -18,7 +18,7 @@
             justify-content: center;
         }
         .profile {
-            background: white;
+            background: peach;
             margin: 15px;
             padding: 20px;
             border-radius: 10px;
