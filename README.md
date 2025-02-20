@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #FFDAB9;
             text-align: center;
         }
         .container {
@@ -18,7 +18,7 @@
             justify-content: center;
         }
         .profile {
-            background: peach;
+            background: #FFDAB9;
             margin: 15px;
             padding: 20px;
             border-radius: 10px;
